@@ -1,0 +1,27 @@
+extends base.pug
+
+block scripts
+    <script src="https://kit.fontawesome.com/55954c3508.js" crossorigin="anonymous"></script>
+block style
+    style 
+        include ../static/style.css
+        include ../static/styleContact.css
+block content
+    .back 
+        h1 Contact Us
+        from(action="/contact", method="POST", class="myForm")
+            .formInside 
+                <i class="fa fa-user"></i>
+                input(type="text",class="myInput", name="name", placeholder="Enter your name...")
+            .formInside 
+                <i class="fa fa-phone"></i>
+                input(type="text",class="myInput", name="phone", placeholder="Enter your phone number...")
+            .formInside 
+                <i class="fa fa-envelope"></i>
+                input(type="email",class="myInput", name="email", placeholder="Enter your email id...")
+            .formInside 
+                <i class="fa fa-comments"></i>
+                input(type="text",class="myInput", name="about", placeholder="About you...")
+            <button class="btn">Submit</button>
+        h1 #{resp}
+    <script src="/script.js"></script>

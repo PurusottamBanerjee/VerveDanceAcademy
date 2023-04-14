@@ -1,0 +1,44 @@
+extends base.pug
+
+block scripts
+    script(src="/static/index.js")
+block style
+    style 
+        include ../static/style.css
+block content
+        section#introSection 
+            |Welcome to Verve Dance Academy
+            p.small
+                |Eat Dance Sleep Repeat
+        section#missionSection 
+            h1 Our Mission    
+            .cards
+                .card 
+                    H2 From Passion to Perfection
+                    div.card-cont
+                        .card-img 
+                            img(src="img/img1.png" class="img1")
+                        p
+                            |To inspire a lifelong passion for dance by fostering creativity, technique, and artistry in students of all ages and backgrounds.
+                    
+                .card 
+                    H2 To Inspire and Empower
+                    div.card-cont
+                        .card-img 
+                            img(src="img/img2.png")
+                        p
+                            |To empower dancers to express themselves through movement and cultivate an appreciation for the arts in our community.
+                .card 
+                    h2 Expert Guidance
+                    div.card-cont
+                        .card-img 
+                            img(src="img/img3.png")
+                        p
+                            |To provide comprehensive dance education that prepares students for success in professional or academic pursuits.
+        section#sponsorSection 
+            h1 Our Sponsors
+            .sponsors 
+                img(src="img/sponsor1.png", alt="Sponsor", class="spImg")   
+                img(src="img/sponsor2.png", alt="Sponsor", class="spImg")    
+                img(src="img/sponsor3.png", alt="Sponsor", class="spImg")    
+                img(src="img/sponsor4.png", alt="Sponsor", class="spImg")

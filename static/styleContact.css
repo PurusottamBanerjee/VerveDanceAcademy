@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap');
+h1{
+    font-size: 41px;
+    text-align: center;
+    padding: 15px;
+    font-family: 'Kanit', sans-serif;
+    color: whitesmoke;
+}
+
+.myForm{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.myInput{
+    border-radius: 17px;
+    background: transparent;
+    width: 500px;
+    outline: none;
+    color: whitesmoke;
+    border-bottom: 2px solid #9b60609e;
+    font-size: 17px;
+    padding: 10px;
+    margin: 10px;
+}
+::placeholder { 
+    color: whitesmoke;
+    opacity: 0.6; 
+  }
+  
+.back{
+    display: flex;
+    height: 79vh;
+    background: url(/bg.jpg) center center/cover no-repeat;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.btn{
+        font-family: 'Kanit', sans-serif;
+        cursor: pointer;
+        padding: 3px;
+        background-color: #c83e3e29;
+        width: 134px;
+        margin: 1px auto;
+        border-radius: 14px;
+        height: 50px;
+        outline: none;
+        color: whitesmoke;
+}
+.btn:hover{
+    font-family: 'Kanit', sans-serif;
+    cursor: pointer;
+    padding: 3px;
+    background-color: #c41b1b69;
+    width: 134px;
+    margin: 1px auto;
+    border-radius: 14px;
+    height: 50px;
+    outline: none;
+    color: whitesmoke;
+}
+
+.fa{
+    margin: 5px 5px;
+    padding-right: 5px ;
+    opacity: 0.6;
+    filter: invert();
+}

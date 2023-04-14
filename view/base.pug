@@ -1,0 +1,19 @@
+html
+  head
+    title Verve Dance Academy
+    block scripts
+    block style
+  body
+    nav#navbar.top
+        ul
+            #logo 
+                img(src="img/img2.png")
+                | VERVE
+            li #[a(href="/") Home] 
+            //- li #[a(href="/") Class Info]
+            li #[a(href="/services") Services]
+            li #[a(href="/about") About ]
+            li #[a(href="/contact") Contact Us ]
+    block content
+    footer#footer 
+            |Copyright © 2023 VerveDanceAcademy.com || All rights reserved 
